@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Playfair+Display&family=Prompt:wght@100&display=swap');
+* {
+    font-family: 'Akshar', sans-serif;
+}
+
+*::selection {
+    color: rgb(73, 213, 231);
+    background-color: black;
+}
+
+.card-title {
+    text-shadow: 2px 2px 4px rgb(51, 51, 51);
+}
+
+.footer i {
+    color: #bbb7b7;
+    font-size: 30px;
+}
+
+.col-lg-8 {}
