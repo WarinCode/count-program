@@ -38,10 +38,10 @@ export default class Content extends React.Component{
     // reset = (set_default_color)=>{
     //     confirmAlert({
     //         title: 'ยืนยันว่าต้องเริ่มต้นใหม่',
-    //         message: 'ถ้าคุณต้องการกดปุ่มใช้',
+    //         message: 'ถ้าคุณต้องการกดปุ่มใช่',
     //         buttons: [
     //           {
-    //             label: 'ใช้',
+    //             label: 'ใช่',
     //             onClick: () => {
     //                     this.count = 0
     //                     set_default_color = document.querySelector('#render').style.color = 'black'
@@ -59,12 +59,12 @@ export default class Content extends React.Component{
     reset = (set_default_color)=>{
         Swal.fire({
             title: 'คุณต้องการนับเลขใหม่ไหม?',
-            text: "ถ้าคุณต้องการกดปุ่มใช้",
+            text: "ถ้าคุณต้องการกดปุ่มใช่",
             icon: 'question',
             showCancelButton: true,
             confirmButtonColor: '#3085d6',
             cancelButtonColor: '#d33',
-            confirmButtonText: 'ใช้',
+            confirmButtonText: 'ใช่',
             cancelButtonText: 'ไม่'
           }).then((result) => {
             if (result.isConfirmed) {
