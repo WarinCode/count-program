@@ -1,40 +1,27 @@
+// import react
 import React from 'react';
 
-// style
+// import style
 import './style/App.css';
 
-// lib
+// import lib
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle';
 import '../node_modules/remixicon/fonts/remixicon.css';
 
-// *** install libraries
-/*
-    - bootstrap5
-    - remixicon
-    - react-confirm-alert
-    - sweatealert2
-*/
+// import component(default)
+import Navbar from './component/navbar';
+import Content from './component/content';
+import Footer from './component/footer';
 
-// component
-import {Navbar} from './component/navbar';
-import Content from './component/content'; // default
-import {Footer} from './component/footer';
-
-
-//  app
-const App = ()=> {
+const App = () => {
   return (
     <React.Fragment>
-      <>
       <Navbar/>
-      <Content/>
+        <Content/>
       <Footer/>
-      </>
     </React.Fragment>
-  );
-};
+  )
+}
 
 export default App;
-
-
