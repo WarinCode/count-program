@@ -1,7 +1,7 @@
 /* googlefont */
-
 @import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Playfair+Display&family=Prompt:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Itim&family=Playfair+Display&family=Prompt:wght@100&display=swap');
+
 *::selection {
     color: rgb(73, 213, 231);
     background-color: black;
