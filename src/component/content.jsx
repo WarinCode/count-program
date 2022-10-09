@@ -1,61 +1,33 @@
-
-// react
+// import react
 import React from "react";
 
-// lib
-import 'react-confirm-alert/src/react-confirm-alert.css';
+// import lib
+// import 'react-confirm-alert/src/react-confirm-alert.css';
 import Swal from 'sweetalert2'
 
-// style
+// import style
 import '../style/App.css';
 import '../style/style';
 import { margintop } from "../style/style";
 
-
-// const input = React.createRef()
-
-export default class Content extends React.Component{
-
+export default class Content extends React.Component {
     state = { number: 0};
     count = this.state.number;
     
-    increase_the_number = (increase)=>{  
-        increase = this.count += 1
+    increase_the_number = (increase) => {  
+        increase = this.count += 1;
         this.setState({ number: increase });
-        let green_color = document.querySelector('#render')
-        green_color.style.color = 'green'
-    };
+        let green_color = document.querySelector('#render');
+        green_color.style.color = 'green';
+    }
 
     reduce_the_number = (reduce)=>{  
-        reduce = this.count -= 1
+        reduce = this.count -= 1;
         this.setState({ number: reduce});
-        let red_color = document.querySelector('#render')
-        red_color.style.color = 'red'
+        let red_color = document.querySelector('#render');
+        red_color.style.color = 'red';
     };
-
-    // lib react-confirm-alert
-
-    // reset = (set_default_color)=>{
-    //     confirmAlert({
-    //         title: 'ยืนยันว่าต้องเริ่มต้นใหม่',
-    //         message: 'ถ้าคุณต้องการกดปุ่มใช่',
-    //         buttons: [
-    //           {
-    //             label: 'ใช่',
-    //             onClick: () => {
-    //                     this.count = 0
-    //                     set_default_color = document.querySelector('#render').style.color = 'black'
-    //                     this.setState({ number: this.count});
-    //             }
-    //           },{
-    //             label: 'ไม่',
-    //           }]
-    //       });
-    // };
-
-
-    // sweatalert2
-
+    
     reset = (set_default_color)=>{
         Swal.fire({
             title: 'คุณต้องการนับเลขใหม่ไหม?',
@@ -73,20 +45,17 @@ export default class Content extends React.Component{
                 'โปรแกรมทำการนับจำนวนใหม่เรียบร้อย',
                 'success'
               )
-              this.count = 0
-                set_default_color = document.querySelector('#render').style.color = 'black'
+              this.count = 0;
+                set_default_color = document.querySelector('#render').style.color = 'black';
                 this.setState({ number: this.count});
             }
-          });
-        };
+          })
+        }
     
     render(){
-
         return (
             <>
-
-            <section style={margintop}></section>
-
+            <section style={margintop} ></section>
                 <div className="container" >
                     <div className="row">
                         <div className="col-lg-2"></div>
@@ -109,10 +78,7 @@ export default class Content extends React.Component{
                         <div className="col-lg-2"></div>
                     </div>
                 </div>
-
             </>
-        );
-
-    };
-};
-
+        )
+    }
+}
